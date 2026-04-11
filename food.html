@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hangzhou Cuisine</title>
+<meta charset="utf-8">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f9f7;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background: #2d5a4a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+header a:hover {
+  text-decoration: underline;
+}
+.hero {
+  height: 50vh;
+  background: linear-gradient(rgba(45, 90, 74, 0.7), rgba(45, 90, 74, 0.7)), url('images/food-hero.jpeg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-size: cover;
+}
+.hero h1 {
+  font-size: 48px;
+  letter-spacing: 8px;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.intro h2 {
+  font-size: 28px;
+  color: #2d5a4a;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+.intro p {
+  color: #666;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+.food-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+.food-card:hover {
+  transform: translateY(-5px);
+}
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.food-card .content {
+  padding: 25px;
+}
+.food-card h3 {
+  font-size: 20px;
+  color: #2d5a4a;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.food-card .name-en {
+  font-size: 12px;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.food-card p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 14px;
+}
+.section-title {
+  text-align: center;
+  margin: 60px 0 40px;
+}
+.section-title h2 {
+  font-size: 28px;
+  color: #2d5a4a;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+.section-title p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.tips {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 50px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.tips h3 {
+  font-size: 22px;
+  color: #2d5a4a;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.tips ul {
+  list-style: none;
+}
+.tips li {
+  color: #666;
+  line-height: 2;
+  padding-left: 25px;
+  position: relative;
+}
+.tips li:before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  color: #2d5a4a;
+}
+.back-btn {
+  display: inline-block;
+  margin-top: 50px;
+  color: #2d5a4a;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← HOME</a>
+    <a href="westlake.html">WEST LAKE →</a>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>HANGZHOU CUISINE</h1>
+      <p>A Culinary Paradise</p>
+    </div>
+  </section>
+
+  <div class="main">
+    <div class="intro">
+      <h2>HANGZHOU FOOD CULTURE</h2>
+      <p>Hangzhou cuisine, also known as Lu Cuisine, is one of the Eight Major Cuisines of China. Known for its delicate flavors, elegant presentation, and emphasis on fresh ingredients, Hangzhou cuisine reflects the refined culture of this beautiful lakeside city. From imperial dishes to street snacks, every bite tells a story of Hangzhou's thousand-year heritage.</p>
+    </div>
+
+    <div class="section-title">
+      <h2>CLASSIC DISHES</h2>
+      <p>These signature dishes have been perfected over centuries and remain beloved by locals and visitors alike.</p>
+    </div>
+
+    <div class="food-grid">
+      <div class="food-card">
+        <img src="images/dongpo-pork.jpeg" alt="Dongpo Pork">
+        <div class="content">
+          <h3>Dongpo Pork</h3>
+          <div class="name-en">BRAISED PORK BELLY</div>
+          <p>Braised pork belly slow-cooked with soy sauce, rice wine, and aromatics for over 4 hours. This legendary dish was created in honor of the poet Su Dongpo. The meat becomes incredibly tender, melting in your mouth while maintaining its shape. Each piece is served in a small clay pot, glistening with rich, caramelized sauce.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/dragon-well-shrimp.jpeg" alt="Dragon Well Shrimp">
+        <div class="content">
+          <h3>Dragon Well Shrimp</h3>
+          <div class="name-en">TEA-INFUSED SHRIMP</div>
+          <p>Fresh river shrimp delicately stir-fried with Longjing tea leaves, creating a perfect harmony of land and water. The dish captures the essence of Hangzhou's famous tea culture. The shrimp are plump and sweet, infused with the subtle fragrance of premium dragon well green tea, making it a true delicacy.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/westlake-fish.jpeg" alt="West Lake Fish in Vinegar Sauce">
+        <div class="content">
+          <h3>West Lake Fish</h3>
+          <div class="name-en">SWEET AND SOUR FISH</div>
+          <p>Fresh mandarin fish from West Lake cooked to perfection and served with a sweet-sour sauce made from aged vinegar. This dish originated from the Song Dynasty and represents the essence of Hangzhou cuisine. The fish is incredibly tender with a delicate briny flavor, perfectly balanced by the tangy glaze.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/beggar-chicken.jpeg" alt="Beggar's Chicken">
+        <div class="content">
+          <h3>Beggar's Chicken</h3>
+          <div class="name-en">MUD-ROASTED CHICKEN</div>
+          <p>A whole chicken wrapped in lotus leaves and mud, then slow-roasted for hours until the meat becomes fall-off-the-bone tender. This legendary dish dates back to the Qing Dynasty. The clay coating seals in all the juices and aromas, resulting in incredibly flavorful and aromatic meat.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/sliced-noodles.jpeg" alt="Sliced Noodles">
+        <div class="content">
+          <h3>Sliced Noodles</h3>
+          <div class="name-en">PIAN ER CHUAN NOODLES</div>
+          <p>A beloved Hangzhou street food featuring hand-cut noodles in a rich pork bone broth with pickled vegetables, bamboo shoots, and lean pork. This warming dish has been a staple of Hangzhou's breakfast culture for over a century. The sour-accented broth perfectly complements the chewy noodles.</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/xiaolongbao.jpg" alt="Xiaolongbao">
+        <div class="content">
+          <h3>Xiaolongbao</h3>
+          <div class="name-en">STEAMED SOUP DUMPLINGS</div>
+          <p>Delicate steamed buns filled with pork and savory aspic that creates a burst of rich, hot soup when you bite into them. Though originally from nearby Shanghai, Hangzhou has adopted this dumpling with its own local variations. The thin, translucent skin holds precious soup within.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips">
+      <h3>DINING RECOMMENDATIONS</h3>
+      <ul>
+        <li><strong>Louwailou Restaurant</strong> - Founded in 1848, this legendary restaurant on the shores of West Lake serves authentic Hangzhou cuisine with dishes like West Lake Fish in Vinegar Sauce and Dragon Well Shrimp.</li>
+        <li><strong>Hubin Road</strong> - This bustling food street offers a mix of traditional Hangzhou dishes and modern culinary experiences, perfect for evening strolls and dinner.</li>
+        <li><strong>Gao Street</strong> - Known as Hangzhou's Food Street, featuring over 60 restaurants offering cuisines from across China and beyond.</li>
+        <li><strong>Wulin Night Market</strong> - Experience local street food culture with vendors selling late into the night, including grilled skewers, stinky tofu, and sweet rice balls.</li>
+        <li><strong>Tea Houses</strong> - Many traditional tea houses serve light meals and snacks alongside Longjing tea, offering an authentic Hangzhou cultural experience.</li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
